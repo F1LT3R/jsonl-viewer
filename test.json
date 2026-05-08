@@ -1,0 +1,24 @@
+{
+  "name": "jsonl-viewer",
+  "version": "0.1.0",
+  "features": {
+    "syntax_highlighting": true,
+    "folding": true,
+    "search": {
+      "regex": true,
+      "forward": true,
+      "backward": true,
+      "highlight_color": "dim_yellow"
+    }
+  },
+  "authors": ["Alice", "Bob", "Charlie"],
+  "nested": {
+    "level1": {
+      "level2": {
+        "level3": {
+          "value": 42
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+	"name": "jsonl-viewer",
+	"version": "0.1.0",
+	"description": "Interactive CLI viewer for JSON and JSONL files with syntax highlighting, folding, and search",
+	"type": "module",
+	"bin": {
+		"jv": "./bin/jv.mjs"
+	},
+	"dependencies": {
+		"chromafi": "^2.1.0"
+	},
+	"keywords": [
+		"json",
+		"jsonl",
+		"viewer",
+		"cli",
+		"syntax-highlighting"
+	],
+	"license": "MIT"
+}
