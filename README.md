@@ -23,6 +23,7 @@ curl -s https://api.example.com/data | jv
 -t, --tab-width <n>   Indent width (default: 2)
 --use-tabs             Indent with tabs
 --wrap                 Enable line wrapping (default: off)
+--no-numbers           Hide line number gutter (default: shown)
 -h, --help             Show help
 ```
 
@@ -63,6 +64,10 @@ Matches are highlighted with a dim yellow background.
 ## JSONL Support
 
 JSONL files are lazy-loaded — only records near the viewport are parsed. This allows viewing multi-GB JSONL files with millions of records. Each record is displayed with a separator line.
+
+The viewer opens at the **tail** of the file (last record, last line), like `less +G` or `tail`. Scroll up to load earlier records in 20-record pages. The status bar shows the loaded range as `Records {start}-{end}/{total}`.
+
+Search currently covers loaded records only. If a match isn't found, scroll up first to expand the loaded window, then re-run the search.
 
 ## Dependencies
 
