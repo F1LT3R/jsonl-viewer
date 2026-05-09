@@ -20,6 +20,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Fixed
 
 - TDZ crash in lazy JSONL load (`loadedRangeStart` accessed before initialization)
+- Fold collapse for multi-record buffers — `foldEndIndex` is now stored as a delta from the foldable line, so it resolves correctly against the merged `allLines` regardless of where a record sits
 
 ## [0.1.0] - 2026-03-26
 
